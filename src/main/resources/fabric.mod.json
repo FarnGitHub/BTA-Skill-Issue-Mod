@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "debug_screen_feature_unlocker",
+  "version": "1.0",
+
+  "name": "Debug Screen feature Unlocker",
+  "description": "This mod unlock all compass, clock and rotary calender feature in debug screen.",
+  "authors": [
+    "farnfarn02"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+        "farn.DebugScreenFeatureUnlocker.Main"
+    ]
+  },
+  "mixins": [
+      "examplemod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3"
+  },
+  "suggests": {
+  }
+}
