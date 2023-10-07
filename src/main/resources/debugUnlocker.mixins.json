@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "farn.DebugScreenFeatureUnlocker.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "client": [
+        "GuiIngameMixin",
+        "GuiInventoryMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+  }
+}
