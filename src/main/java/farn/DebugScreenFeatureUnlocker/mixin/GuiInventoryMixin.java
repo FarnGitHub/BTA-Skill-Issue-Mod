@@ -8,17 +8,17 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(value = GuiInventory.class, remap = false)
 public class GuiInventoryMixin {
-    @ModifyVariable(method = "updateOverlayButtons", at = @At("STORE"), ordinal = 0)
+    @ModifyVariable(method = "updateOverlayButtons", at = @At("STORE"), name="clock")
     private boolean unlockClockFeature(boolean value) {
         return DbgUnlocker.ClockFeature;
     }
 
-    @ModifyVariable(method = "updateOverlayButtons", at = @At("STORE"), ordinal = 1)
+    @ModifyVariable(method = "updateOverlayButtons", at = @At("STORE"), name="compass")
     private boolean unlockCompassFeature(boolean value) {
         return DbgUnlocker.CompassFeature;
     }
 
-    @ModifyVariable(method = "updateOverlayButtons", at = @At("STORE"), ordinal = 2)
+    @ModifyVariable(method = "updateOverlayButtons", at = @At("STORE"), name="rotaryCalendar")
     private boolean unlockCalenderFeature(boolean value) {
         return DbgUnlocker.CalenderFeature;
     }

@@ -45,11 +45,6 @@ public class GuiDbgUnlockerConfig extends GuiScreen {
             this.mc.displayGuiScreen(this.getParentScreen());
         }
 
-        if (guibutton.id == 3) {
-            DbgUnlocker.writeConfig();
-            this.mc.displayGuiScreen(this.getParentScreen());
-        }
-
     }
 
     public String translateKey(String string) {
